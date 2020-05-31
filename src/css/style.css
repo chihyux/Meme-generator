@@ -47,6 +47,7 @@ button {
     z-index: 99;
     display: flex;
     justify-content: center;
+    left: 0;
 }
 
 .pop button {
