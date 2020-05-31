@@ -1,4 +1,7 @@
 # MEME generator
+![image](https://github.com/chihyux/Meme-generator/blob/master/index.png)
+![image](https://github.com/chihyux/Meme-generator/blob/master/add.png)
+
 create meme by using Imgflip.
 an app using redux-thunk and redux-logger 
 
