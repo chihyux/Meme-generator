@@ -73,18 +73,26 @@ button {
     width: 150px;
 }
 
+.memeWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media(max-width: 800px) {
+    body { 
+        margin: 0; 
+    }
     #app {
         width: 100%;
     }
 }
 
 @media(max-width: 580px) {
-    .newMemes {
-        width: 50%;
+    .newMemes, .memes {
+        width: 45%;
     }
-    .memes {
-        width: 30%;
+    .newMeme img, .memes img {
+        width: 100%;
     }
 }
 

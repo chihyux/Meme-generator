@@ -100,7 +100,7 @@ class Meme extends React.Component {
                     null
                 }
          
-                <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+                <div className='memeWrapper'>
                     { this.props.meme.slice(0,this.state.memeLimit).map(meme => 
                         <MemeItem meme={meme} />
                     )}

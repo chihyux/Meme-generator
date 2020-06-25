@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 const NewMeme = ({newMeme}) => {
     return (
-      <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+      <div className='memeWrapper'>
         {
           newMeme.map((meme, index) => {
             return(
