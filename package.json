@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/chihyux/ReduxDemo/issues"
   },
-  "homepage": "https://github.com/chihyux/ReduxDemo#readme",
+  "homepage": "https://infallible-newton-7e720a.netlify.app",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",

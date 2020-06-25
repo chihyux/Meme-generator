@@ -73,8 +73,18 @@ button {
     width: 150px;
 }
 
-@media(max-width: 580) {
+@media(max-width: 800px) {
+    #app {
+        width: 100%;
+    }
+}
+
+@media(max-width: 580px) {
     .newMemes {
         width: 50%;
     }
+    .memes {
+        width: 30%;
+    }
 }
+
