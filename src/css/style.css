@@ -58,3 +58,23 @@ button {
     background-color: #464646;
     padding: 10px 30px 50px;
 }
+
+.memes {
+    margin: 5px;
+    width: 30%;
+}
+
+.newMemes {
+    margin: 5px;
+    width: 30%;
+}
+
+.newMeme img, .memes img {
+    width: 150px;
+}
+
+@media(max-width: 580) {
+    .newMemes {
+        width: 50%;
+    }
+}

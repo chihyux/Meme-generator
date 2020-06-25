@@ -12,8 +12,8 @@ class MemeItem extends React.Component {
         return (
             <div key={this.props.meme.id} 
                  onClick={() => this.selected()} 
-                 style={{ margin: 5 }}>
-                <img style={{width: 150 }} src={this.props.meme.url}></img>  
+                 className='memes'>
+                <img src={this.props.meme.url}></img>  
             </div>
         )
     }

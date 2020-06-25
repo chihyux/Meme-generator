@@ -7,8 +7,8 @@ const NewMeme = ({newMeme}) => {
         {
           newMeme.map((meme, index) => {
             return(
-              <div style={{ margin: 5 }}>
-                <img style={{width: 150 }} key={index} src={meme.data.url} />
+              <div className='newMemes'>
+                <img key={index} src={meme.data.url} />
               </div>
             )
           })
