@@ -59,14 +59,9 @@ button {
     padding: 10px 30px 50px;
 }
 
-.memes {
+.memes, .newMemes {
     margin: 5px;
-    width: 30%;
-}
 
-.newMemes {
-    margin: 5px;
-    width: 30%;
 }
 
 .newMeme img, .memes img {
