@@ -8,15 +8,15 @@ class MemeItem extends React.Component {
         this.props.getImgId(this.props.meme.id)
     }
 
-    render () {
+    render() {
         return (
-            <div key={this.props.meme.id} 
-                 onClick={() => this.selected()} 
-                 className='memes'>
-                <img src={this.props.meme.url}></img>  
+            <div key={this.props.meme.id}
+                onClick={() => this.selected()}
+                className='memes'>
+                <img src={this.props.meme.url}></img>
             </div>
         )
     }
 }
 
-export default connect(null, {getImgId})(MemeItem)
+export default connect(null, { getImgId })(MemeItem)

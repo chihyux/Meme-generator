@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chihyux/ReduxDemo.git"
+    "url": "git+https://github.com/chihyux/meme_generator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chihyux/ReduxDemo/issues"
+    "url": "https://github.com/chihyux/meme_generator/issues"
   },
   "homepage": "https://infallible-newton-7e720a.netlify.app",
   "devDependencies": {

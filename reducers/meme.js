@@ -3,13 +3,13 @@ import { GET_MEME, FETCH_SUCCESS, NEW_MEME, GET_IMGID } from '../constants/actio
 const memeData = []
 
 const memeReducer = (state = memeData, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case FETCH_SUCCESS: {
-            let { data:{memes} } = action.meme
-            return [...state, ...memes ]
+            let { data: { memes } } = action.meme
+            return [...state, ...memes]
         }
         case GET_MEME: {
-            return [ ...state ]
+            return [...state]
         }
         default: {
             return state
@@ -17,8 +17,8 @@ const memeReducer = (state = memeData, action) => {
     }
 }
 
-const newMeme = (state=[], action) => {
-    switch(action.type) {
+const newMeme = (state = [], action) => {
+    switch (action.type) {
         case NEW_MEME: {
             return [...state, action.meme]
         }
@@ -28,10 +28,11 @@ const newMeme = (state=[], action) => {
     }
 }
 
-const getImgId = (state=[], action) => {
-    switch(action.type) {
+const getImgId = (state = [], action) => {
+    switch (action.type) {
         case GET_IMGID: {
-              return [action.id]  
+            const getId = new Set([action.id])
+            return Array.from(getId)
         }
         // post 出去以後清空
         default: {
@@ -39,4 +40,4 @@ const getImgId = (state=[], action) => {
         }
     }
 }
-export { memeReducer , newMeme, getImgId }
+export { memeReducer, newMeme, getImgId }
