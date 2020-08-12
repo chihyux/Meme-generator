@@ -1,108 +1,120 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #333333;
-    margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #333333;
+  margin: 0;
 }
 
 #app {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
-h1, h2 { 
-    color: #ffffff;
-    text-shadow: -1px 4px #000000;
+h1,
+h2 {
+  color: #ffffff;
+  text-shadow: -1px 4px #000000;
 }
 
 h4 {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .meme {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.meme-form {
+  display: flex;
+  align-items: center;
 }
 
 form {
-    margin-top: 30px;
-    text-align: center; 
-    color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
+  color: #ffffff;
 }
 
 form input {
-   margin-right: 5px;
-   border: transparent;
-   height: 25px;
-   border-radius: 5px;
+  margin-right: 5px;
+  border: transparent;
+  height: 25px;
+  border-radius: 5px;
 }
 
 button {
-    background: #ffdf00;
-    border-radius: 5px;
-    border: transparent;
-    padding: 5px 10px;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.5);
-    font-weight: bold;
+  background: #ffdf00;
+  border-radius: 5px;
+  border: transparent;
+  padding: 5px 10px;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 .pop {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background: rgba(0,0,0,0.8);
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  left: 0;
 }
 
 .pop button {
-    margin: 10px 5px;
+  margin: 10px 5px;
 }
 
 .newMeme {
-    background-color: #464646;
-    padding: 10px 30px 50px;
+  background-color: #464646;
+  padding: 10px 30px 50px;
 }
 
-.memes, .newMemes {
-    margin: 5px;
-
+.memes,
+.newMemes {
+  margin: 5px;
 }
 
-.newMeme img, .memes img {
-    width: 150px;
+.newMeme img,
+.memes img {
+  width: 150px;
 }
 
 .memeWrapper {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .scroll-text {
-    text-align: center;
-    margin: 20px 0;
-    text-shadow: 3px 2px black;
-    font-size: 1.5em;
-    color: #ffdf00;
-    letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 3px 2px black;
+  font-size: 1.5em;
+  color: #ffdf00;
+  letter-spacing: 2px;
 }
 
-@media(max-width: 800px) {
-    body { 
-        margin: 0; 
-    }
-    #app {
-        width: 100%;
-    }
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  #app {
+    width: 100%;
+  }
 }
 
-@media(max-width: 580px) {
-    .newMemes, .memes {
-        width: 45%;
-    }
-    .newMeme img, .memes img {
-        width: 100%;
-    }
+@media (max-width: 580px) {
+  .newMemes,
+  .memes {
+    width: 45%;
+  }
+  .newMeme img,
+  .memes img {
+    width: 100%;
+  }
 }
-

@@ -1,43 +1,50 @@
-import { GET_MEME, FETCH_SUCCESS, NEW_MEME, GET_IMGID } from '../constants/action-types'
+import {
+  GET_MEME,
+  FETCH_SUCCESS,
+  NEW_MEME,
+  GET_IMGID,
+  CLEAR_ID,
+} from "../constants/action-types";
 
-const memeData = []
-
-const memeReducer = (state = memeData, action) => {
-    switch (action.type) {
-        case FETCH_SUCCESS: {
-            let { data: { memes } } = action.meme
-            return [...state, ...memes]
-        }
-        case GET_MEME: {
-            return [...state]
-        }
-        default: {
-            return state
-        }
+const memeReducer = (state = [], action) => {
+  switch (action.type) {
+    case FETCH_SUCCESS: {
+      let {
+        data: { memes },
+      } = action.meme;
+      return [...state, ...memes];
     }
-}
+    case GET_MEME: {
+      return [...state];
+    }
+    default: {
+      return state;
+    }
+  }
+};
 
 const newMeme = (state = [], action) => {
-    switch (action.type) {
-        case NEW_MEME: {
-            return [...state, action.meme]
-        }
-        default: {
-            return state
-        }
+  switch (action.type) {
+    case NEW_MEME: {
+      return [...state, action.meme];
     }
-}
+    default: {
+      return state;
+    }
+  }
+};
 
 const getImgId = (state = [], action) => {
-    switch (action.type) {
-        case GET_IMGID: {
-            const getId = new Set([action.id])
-            return Array.from(getId)
-        }
-        // post 出去以後清空
-        default: {
-            return []
-        }
+  switch (action.type) {
+    case GET_IMGID: {
+      return [...state, action.id];
     }
-}
-export { memeReducer, newMeme, getImgId }
+    case CLEAR_ID: {
+      return [];
+    }
+    default: {
+      return state;
+    }
+  }
+};
+export { memeReducer, newMeme, getImgId };

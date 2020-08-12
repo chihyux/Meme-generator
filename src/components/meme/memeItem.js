@@ -1,22 +1,17 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { getImgId } from '../../../actions/meme'
+import React from "react";
+import { connect } from "react-redux";
+import { getImgId } from "../../../actions/meme";
 
-class MemeItem extends React.Component {
-    selected() {
-        //使用action 把id傳入store讓父層吃到
-        this.props.getImgId(this.props.meme.id)
-    }
+const MemeItem = ({ meme, getImgId }) => {
+  function selected() {
+    document.body.classList.add("no-scroll");
+    getImgId(meme.id);
+  }
+  return (
+    <div key={meme.id} onClick={() => selected()} className="memes">
+      <img src={meme.url}></img>
+    </div>
+  );
+};
 
-    render() {
-        return (
-            <div key={this.props.meme.id}
-                onClick={() => this.selected()}
-                className='memes'>
-                <img src={this.props.meme.url}></img>
-            </div>
-        )
-    }
-}
-
-export default connect(null, { getImgId })(MemeItem)
+export default connect(null, { getImgId })(MemeItem);
