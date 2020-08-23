@@ -8,7 +8,8 @@ an app using redux-thunk and redux-logger
 ## User story
 1. select Meme picture
 2. add Text to create Meme
-3. download New Meme 
+3. scroll to load more
+4. prohibit scroll when form pop up
 
 ## Installing
 1. clone this project
