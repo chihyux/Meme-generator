@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { createMeme, clearId } from "../../../actions/meme";
+import { createMeme, clearId, getImgId } from "../../../actions/meme";
 
 class PopBox extends React.Component {
   constructor(props) {
@@ -78,9 +78,15 @@ class PopBox extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    getImgId: state.getImgId
+  };
+};
+
 const mapDispatchToProps = (dispatch) => ({
   createMeme: bindActionCreators(createMeme, dispatch),
-  clearId: bindActionCreators(clearId, dispatch),
+  clearId: bindActionCreators(clearId, dispatch)
 });
 
-export default connect(null, mapDispatchToProps)(PopBox);
+export default connect(mapStateToProps, mapDispatchToProps)(PopBox);
