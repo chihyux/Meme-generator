@@ -14,6 +14,7 @@ class PopBox extends React.Component {
 
   postMeme(e) {
     e.preventDefault();
+    document.body.classList.remove("no-scroll");
     if (this.state.text0 === "" || this.state.text1 === "") {
       alert("please fill all input");
     } else if (this.props.getImgId === "") {
