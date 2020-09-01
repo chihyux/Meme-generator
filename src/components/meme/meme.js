@@ -54,16 +54,14 @@ class Meme extends React.Component {
     return (
       <div className="meme" style={{ minHeight: this.state.scrollHeight }}>
         <h1>Meme Generator</h1>
-        {this.props.newMeme.length === 0 ? (
-          <div></div>
-        ) : (
+        {this.props.newMeme.length > 0 && (
           <div className="newMeme">
             <h4>Congrats! Here is your new meme.</h4>
             <NewMeme />
           </div>
         )}
         <h2>create your MEME ! </h2>
-        {this.props.getImgId.length && <PopBox />}
+        {this.props.getImgId && <PopBox />}
         <div
           className="memeWrapper"
           ref={this.scrollDom}
