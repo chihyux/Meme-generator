@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { createMeme, clearId, getImgId } from "../../../actions/meme";
+import { createMeme, clearId } from "../../../actions/meme";
 
 class PopBox extends React.Component {
   constructor(props) {

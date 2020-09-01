@@ -34,13 +34,13 @@ const newMeme = (state = [], action) => {
   }
 };
 
-const getImgId = (state = [], action) => {
+const getImgId = (state = '', action) => {
   switch (action.type) {
     case GET_IMGID: {
-      return [...state, action.id];
+      return action.id;
     }
     case CLEAR_ID: {
-      return [];
+      return '';
     }
     default: {
       return state;

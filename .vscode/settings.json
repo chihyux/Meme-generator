@@ -1,0 +1,8 @@
+{
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.stylelintIntegration": true,
+    "prettier.jsxSingleQuote": true,
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true
+}

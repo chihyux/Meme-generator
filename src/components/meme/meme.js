@@ -47,7 +47,6 @@ class Meme extends React.Component {
           memeLimit: this.state.memeLimit + 5,
         });
       }
-      console.log(scrollTop);
     }
   }
 
@@ -64,7 +63,7 @@ class Meme extends React.Component {
           </div>
         )}
         <h2>create your MEME ! </h2>
-        {this.props.getImgId.length ? <PopBox /> : null}
+        {this.props.getImgId.length && <PopBox />}
         <div
           className="memeWrapper"
           ref={this.scrollDom}

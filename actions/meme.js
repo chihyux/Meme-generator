@@ -58,8 +58,6 @@ function postMemeJson(params) {
     })
     .join("&");
 
-  console.log("bodyParams", bodyParams);
-
   return fetch("https://api.imgflip.com/caption_image", {
     method: "POST",
     headers: {
